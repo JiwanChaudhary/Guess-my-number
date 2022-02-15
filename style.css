@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bebas+Neue&family=Montserrat:wght@500&family=Orelega+One&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orelega One', cursive;
+}
+
+.main {
+    height: 400px;
+    width: 450px;
+    background-color: black;
+    overflow: hidden;
+}
+
+header {
+    margin: 5px;
+    position: relative;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 7px 13px;
+    border: none;
+    font-family: 'Orelega One', cursive;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+.between {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+header h1 {
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* margin: 5px auto; */
+    font-size: 45px;
+    /* bottom: 20px; */
+}
+
+.number {
+    position: absolute;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 55px;
+    width: 60px;
+    text-align: center;
+    font-size: 40px;
+    top: 130px;
+    left: 175px;
+}
+
+.number::before,
+.number::after {
+    content: "";
+    position: absolute;
+    height: 7px;
+    background-color: #fff;
+    top: 25px;
+    width: 600px;
+}
+
+.number::after {
+    left: 100%;
+}
+
+.number::before {
+    right: 100%;
+}
+
+.guess {
+    margin-bottom: 15px;
+    background: none;
+    text-align: center;
+}
+
+input {
+    color: #fff;
+    border: 3px solid white;
+    height: 55px;
+    width: 110px;
+    font-size: 29px;
+}
+
+input:focus{
+    outline: none;
+}
+
+main {
+    margin-top: 190px;
+    display: flex;
+    margin-left: 40px;
+    /* margin-right: 10px; */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /* position: relative; */
+}
+
+
+.right {
+    color: #fff;
+    margin-left: 30px;
+}
+
+.right p {
+    font-size: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.score::before {
+    content: "";
+    margin-left: 10px;
+}
+
+.highscore::before {
+    content: "";
+    margin-left: 10px;
+}
+
+.made-by {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 450px;
+    font-family: serif;
+}
